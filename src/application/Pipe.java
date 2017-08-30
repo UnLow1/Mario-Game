@@ -14,27 +14,23 @@ public class Pipe {
 		this.y = (int) (550 - 85 - image.getHeight());
 	}
 
-	public Image getImage() {
+	Image getImage() {
 		return image;
 	}
 
-	public void setImage(Image image) {
-		this.image = image;
-	}
-
-	public int getX() {
+	int getX() {
 		return x;
 	}
 
-	public void setX(int x) {
+	void setX(int x) {
 		this.x = x;
 	}
 
-	public int getY() {
+	int getY() {
 		return y;
 	}
 
-	public boolean collision(Pipe pipe) {
+	boolean collision(Pipe pipe) {
 		// collision with point (x + image.width, y + image.height)
 		if (x + image.getWidth() >= pipe.getX() && x + image.getWidth() <= pipe.getX() + pipe.getImage().getWidth()
 				&& y + image.getHeight() >= pipe.getY()
@@ -50,7 +46,7 @@ public class Pipe {
 		return false;
 	}
 
-	public boolean collision(Enemy enemy) {
+	boolean collision(Enemy enemy) {
 		// collision with point (x + image.width, y + image.height)
 		if (x + image.getWidth() >= enemy.getX() && x + image.getWidth() <= enemy.getX() + enemy.getImage().getWidth()
 				&& y + image.getHeight() >= enemy.getY()
@@ -72,7 +68,7 @@ public class Pipe {
 		return false;
 	}
 
-	public boolean collision(Coin coin) {
+	boolean collision(Coin coin) {
 		// collision with point (x + image.width, y + image.height)
 		if (x + image.getWidth() >= coin.getX() && x + image.getWidth() <= coin.getX() + coin.getImage().getWidth()
 				&& y + image.getHeight() >= coin.getY()
