@@ -24,8 +24,8 @@ OR
 4.  Player die if he would be at level 0 and he would got hit by enemy.
 
 ## Screens from the game
-<img src="/screenshots/Screen1.png" width="200">  
-<img src="/screenshots/Screen2.png" width="200">  
-<img src="/screenshots/Screen3.png" width="200">  
+<img src="/screenshots/Screen1.PNG" width="550">  
+<img src="/screenshots/Screen2.PNG" width="550">  
+<img src="/screenshots/Screen3.PNG" width="550">  
 
 ### Good luck and Have Fun ;)
